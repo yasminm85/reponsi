@@ -1,0 +1,53 @@
+
+<ion-content>
+
+  <ion-grid class="grid1">
+  
+      <ion-row class="row1">
+          <ion-col>
+            
+          </ion-col>
+      </ion-row>
+  
+      <ion-row class="row2">
+          <ion-col>
+  
+          </ion-col>
+      </ion-row>
+  
+  </ion-grid>
+  
+  <ion-slide>
+      <div class="contaier-login">
+          <ion-grid>
+              <ion-row>
+                  <ion-col>
+                      <h1>Login</h1>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                      <ion-list>
+  
+                          <ion-item>
+                              <ion-icon name="person" class="icon-login"></ion-icon>
+                              <ion-input type="text" [(ngModel)]="username" required="required" placeholder="maukkan username"></ion-input>
+                          </ion-item>
+                          <br />
+                          <ion-item>
+                              <ion-icon name="key" class="icon-login"></ion-icon>
+                              <ion-input type="password" [(ngModel)]="password" required="required"  placeholder="maukkan password"></ion-input>
+                          </ion-item>
+  
+                      </ion-list>
+                  </ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col>
+                    <ion-button type="submit" color="primary" expand="block" (click)="prosesLogin()">Login</ion-button>
+                  </ion-col>
+              </ion-row>
+              
+          </ion-grid>
+      </div>
+  </ion-slide>

@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Edit Target</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card class="ion-align-self-center" >
+    <ion-list lines="full">
+      <ion-item>
+        <ion-label position="floating">Nama</ion-label>
+        <ion-input required [(ngModel)]="nama" placeholder="Masukkan nama" type="text">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Alamat</ion-label>
+        <ion-input required [(ngModel)]="alamat" placeholder="Masukkan alamat" type="text">
+        </ion-input>
+      </ion-item>
+    </ion-list>
+
+   <ion-button class="ion-margin" expand="block" (click)="editTask()">Edit Targer</ion-button>
+
+  </ion-card>
+ 
+
+
+</ion-content>
+
+<!-- <ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Edit Task</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label position="floating">Text</ion-label>
+      <ion-input required [(ngModel)]="taskText" placeholder="Enter your task" type="text">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Date</ion-label>
+      <ion-input required [(ngModel)]="taskDate" placeholder="Enter Date" type="date">
+      </ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="button" (click)="editTask()" color="primary" shape="full" expand="block">Edit Task
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+</ion-content> -->
